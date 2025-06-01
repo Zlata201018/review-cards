@@ -29,8 +29,8 @@ section {
     max-width: 1280px;
     opacity: 0;
     transform: translateY(240px);
-    animation-delay: 0.5s;
-    animation: fadeInUp 2s ease forwards;
+    animation-delay: 2s;
+    animation: fadeInUp 2s ease-in-out forwards;
 }
 
 @keyframes cardAppear {
