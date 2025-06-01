@@ -14,12 +14,23 @@ h1 {
     color: #2d3a4b;
 }
 
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 28px;
     width: 90vw;
     max-width: 1280px;
+    opacity: 0;
+    transform: translateY(240px);
+    animation-delay: 0.5s;
+    animation: fadeInUp 2s ease forwards;
 }
 
 @keyframes cardAppear {
@@ -66,17 +77,4 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 24px;
-}
-
-section {
-    opacity: 0;
-    transform: translateY(240px);
-    animation: fadeInUp 2s ease forwards;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
